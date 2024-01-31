@@ -1,0 +1,281 @@
+/* Fonts*/
+@font-face {
+    font-family: inter;
+    src: url(../fonts/Inter-Regular.woff2-kopi);
+}
+
+@font-face {
+    font-family: interl;
+    src: url(../fonts/Inter-Light.woff2-kopi);
+}
+
+/* Styling body */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: interl;
+    background-color: #FAF9F9;
+    margin: 2em;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: interl;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: interl;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-family: interl;
+    margin-left: 0.7em;
+}
+
+p {
+    line-height: 0.5em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling global menu*/
+.mainNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#nav_list li a {
+    list-style: none;
+    margin: 10px;
+    color: black;
+    display: block;
+}
+
+/* Styling af drop down menu */
+nav li {
+    position: relative;
+}
+
+nav li ul {
+    position: absolute;
+    visibility: hidden;
+    background-color: #FAF9F9;
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    text-align: left;
+    list-style: none;
+    left: -38px;
+}
+
+nav li:hover ul {
+    visibility: visible;
+}
+
+/* Links LoVeHAte */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    font-family: inter, sans-serif;
+}
+
+a:active {
+    color: #83A4BD;
+}
+
+/* Styling footer */
+footer {
+    font-family: interl;
+    font-size: 1em;
+}
+
+/* Categories */
+.categorylist a {
+    padding: 1.7em;
+    color: black;
+    background-color: #F0F0F0;
+    display: block;
+    width: 100%;
+    margin-left: -2.3em;
+    border-radius: 0.7em;
+}
+
+.categorylist a:hover {
+    background-color: #EAEAEA;
+}
+
+/* Productlist */
+article a:link {
+    text-decoration: underline;
+}
+
+.smallProduct {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    height: 100%;
+    line-height: 1em;
+}
+
+.subtle {
+    font-family: interl;
+}
+
+.price {
+    font-family: interl;
+}
+
+.priceprev {
+    font-family: interl;
+    color: #606060;
+    text-decoration: line-through;
+}
+
+.pricenow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: interl;
+    color: red;
+}
+
+.discount {
+    background-color: red;
+    padding: 5px;
+    grid-column: -1;
+    color: black;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.smallProduct article img {
+    position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+    .soldout {
+        position: absolute;
+        top: 32.7%;
+        left: 47%;
+        background-color: gray;
+        /* Background color of the badge */
+        color: #fff;
+        /* Text color of the badge */
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: interl;
+    }
+
+    .soldout2 {
+        position: absolute;
+        top: 32.7%;
+        left: 69.3%;
+        background-color: gray;
+        /* Background color of the badge */
+        color: #fff;
+        /* Text color of the badge */
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: interl;
+    }
+
+}
+
+/* Product */
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+}
+
+.breadcrumbs ol li {
+    list-style: none;
+    display: inline;
+    padding: 0.5em;
+}
+
+.breadcrumbs a:link {
+    text-decoration: underline;
+}
+
+.purchasebox {
+    padding: 1em;
+    line-height: 1.2em;
+}
+
+.purchasebox form label {
+    gap: 1rem;
+}
+
+.lable {
+    display: flex;
+    font-family: inter;
+}
+
+.purchasebox button {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+button {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #FAF9F9;
+    border: 2px solid #999999;
+    color: black;
+    margin-bottom: 1rem;
+    font-family: interl;
+    display: inline-block;
+    line-height: initial;
+    transition: background-color 200ms ease-in-out, border 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.product select {
+    min-width: 100px;
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    color: black;
+    height: 2.5rem;
+    background-color: #FAF9F9;
+    background-image: #FAF9F9;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: center right 0.5rem;
+    font-family: interl;
+}

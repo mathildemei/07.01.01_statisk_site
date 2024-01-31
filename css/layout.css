@@ -1,0 +1,35 @@
+/* Forside */
+
+/* Categories */
+.categorylist ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    list-style: none;
+}
+
+/* Productlist */
+@media screen and (min-width: 660px) {
+    .productlist {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+        gap: 2em;
+        line-height: 1em;
+    }
+}
+
+/* Product */
+@media screen and (min-width: 900px) {
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .breadcrumbs {
+        display: flex;
+        list-style-type: none;
+    }
+}
